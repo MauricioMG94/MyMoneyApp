@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..models.typesModel import TypesModel
+from apps.transactions.models.typesModel import TypesModel
 
 class TypesSerializer(serializers.ModelSerializer):
     class Meta:

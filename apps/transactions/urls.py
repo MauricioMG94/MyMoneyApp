@@ -1,10 +1,12 @@
-from rest_framework import routers
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from apps.transactions.views.views import CategoriesModelViewSet, TypesModelViewSet
+from . import views
 
-router = routers.DefaultRouter()
-router.register(r'categories', CategoriesModelViewSet)
-router.register(r'types', TypesModelViewSet)
+router = DefaultRouter()
+router.register('categorias', CategoriesModelViewSet)
+router.register('tipos', TypesModelViewSet)
 
 urlpatterns = [
-    # Tus otras rutas aquí...
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]

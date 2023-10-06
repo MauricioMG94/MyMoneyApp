@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MinLengthValidator
-from .typesModel import TypesModel
+from apps.transactions.models.typesModel import TypesModel
 
 class CategoriesModel(models.Model):
     id = models.AutoField(primary_key=True)

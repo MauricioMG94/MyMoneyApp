@@ -1,9 +1,6 @@
-from rest_framework import routers
-
-router = routers.DefaultRouter()
-router.register(r'reports', ReportsModelViewSet)
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    # Tus otras rutas aquí...
-    path('api/', include(router.urls)),
+    path('reports/', views.profile, name='reports'),
 ]

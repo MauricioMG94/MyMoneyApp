@@ -1,9 +1,10 @@
 from django.shortcuts import render
 
 from rest_framework import viewsets
-from .models.categoriesModel import CategoriesModel
-from .models.typesModel import TypesModel
-from .serializers import CategoriesSerializer, TypesSerializer
+from apps.transactions.models.categoriesModel import CategoriesModel
+from apps.transactions.models.typesModel import TypesModel
+from apps.transactions.serializers.categoriesSerializer import CategoriesSerializer
+from apps.transactions.serializers.typesSerializer import TypesSerializer
 
 
 class CategoriesModelViewSet(viewsets.ModelViewSet):
