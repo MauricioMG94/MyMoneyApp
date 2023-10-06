@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "moneydb",
+        'NAME': "MyMoneyDB",
         'USER' : 'postgres',
-        'PASSWORD' : 'M4ur1c10+',
+        'PASSWORD' : 'MaoPostgres2023',
         'HOST' : 'localhost',
         'PORT' : 5432
     }
